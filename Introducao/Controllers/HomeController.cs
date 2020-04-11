@@ -48,11 +48,11 @@ namespace Introducao.Controllers
         [HttpPost]
         public ActionResult Lista(Pessoa pessoa)
         {
-            ViewData["PessoaId"] = pessoa.PessoaId;
-            ViewData["Nome"] = pessoa.Nome;
-            ViewData["Tipo"] = pessoa.Tipo;
+            //ViewData["PessoaId"] = pessoa.PessoaId;
+            //ViewData["Nome"] = pessoa.Nome;
+            //ViewData["Tipo"] = pessoa.Tipo;
 
-            return View();
+            return View(pessoa);
         }
     }
 }

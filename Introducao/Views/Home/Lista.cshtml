@@ -1,4 +1,4 @@
-﻿
+﻿@model Introducao.Models.Pessoa
 @{
     ViewBag.Title = "Lista";
 }
@@ -6,24 +6,31 @@
 <h2>Lista</h2>
 
 <div>
-    <b>Pessoa ID</b>
+    @*<b>Pessoa ID</b>*@
+    <b>@Html.LabelFor(x=>x.PessoaId)</b>
 </div>
 <div>
-    @ViewData["PessoaId"];
-</div>
-
-<div>
-    <b>Nome </b>
-</div>
-<div>
-    @ViewData["Nome"];
+    @*@ViewData["PessoaId"];*@
+    @Model.PessoaId
 </div>
 
 <div>
-    <b>Tipo</b>
+    @*<b>Nome</b>*@
+    <b>@Html.LabelFor(x => x.Nome)</b>
 </div>
 <div>
-    @ViewData["Tipo"];
+    @*@ViewData["Nome"];*@
+    @Model.Nome
+</div>
+
+<div>
+    @*<b>Tipo</b>*@
+    <b>@Html.LabelFor(x => x.Tipo)</b>
+</div>
+<div>
+    @*@ViewData["Tipo"];*@
+    @Model.Tipo
 </div>
 <br />
-<a href="~/">Voltar</a>
+@*<a href="~/">Voltar</a>*@
+@Html.ActionLink("Voltar", "Index", "Home");
