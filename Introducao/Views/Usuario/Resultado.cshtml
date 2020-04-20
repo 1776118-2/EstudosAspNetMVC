@@ -7,6 +7,7 @@
 
 <fieldset>
     <legend>Usuários cadastrados</legend>
+    
 
     <div class="editor-label">
         @Html.DisplayNameFor(model => model.Nome)
@@ -14,4 +15,54 @@
     <div class="editor-field">
         @Html.DisplayFor(model => model.Nome)
     </div>
+
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Observacoes)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Observacoes)
+    </div>
+
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Idade)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Idade)
+    </div>
+
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Login)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Login)
+    </div>
+
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Senha)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Senha)
+    </div>
+
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.ConfirmarSenha)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.ConfirmarSenha)
+    </div>
+
+    <p>@Html.ActionLink("Votlar", "Usuario")</p>
 </fieldset>
